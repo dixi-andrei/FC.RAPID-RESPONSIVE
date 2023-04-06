@@ -1,0 +1,327 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+@media only screen and (max-width: 768px) {
+
+  .nav-area {
+    position: static;
+    float: none;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .nav-area ul {
+    display: block;
+  }
+  .nav-area li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  .team-area {
+    position: static;
+    float: none;
+    margin: 20px auto 0;
+    text-align: center;
+  }
+  .team-area ul {
+    display: block;
+  }
+  .team-area li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+  .wrapper {
+    max-width: 768px;
+    padding: 20px;
+  }
+  
+  .nav-area {
+    top: 20px;
+    left: 20px;
+  }
+  
+  .team-area {
+    top: 20px;
+    right: 20px;
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+  .wrapper {
+    max-width: 100%;
+    padding: 10px;
+  }
+  
+  .nav-area {
+    top: 10px;
+    left: 10px;
+  }
+  
+  .team-area {
+    top: 10px;
+    right: 10px;
+  }
+  
+  .nav-area ul {
+    flex-wrap: wrap;
+  }
+  
+  .nav-area li {
+    margin-right: 10px;
+  }
+  
+  .team-area ul {
+    flex-wrap: wrap;
+  }
+  
+  .team-area li {
+    margin: 0 10px 10px 0;
+  }
+  
+  .team-area li img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+
+body {
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+    url("images/galerie.jpg.jpg");
+    height: auto;
+    background-size:cover;
+    background-position:inherit;
+    position:relative;
+
+}
+
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+.logo {
+  animation: rotate 5s infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+.logo img {
+  width: 150px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.nav-area {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+
+.nav-area ul {
+  list-style: none;
+  display: flex;
+}
+
+.nav-area li {
+  margin-right: 20px;
+}
+
+.nav-area li:last-child {
+  margin-right: 0;
+}
+
+.nav-area a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 18px;
+  letter-spacing: 1px;
+  padding: 10px 15px;
+  box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+}
+
+.team-area {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.team-area h3 {
+  color: #fff;
+  font-size: 18px;
+  margin-right: 20px;
+}
+
+.team-area img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+}
+
+.nav-area a:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+.nav-area {
+  float: left;
+}
+.nav-area a{
+  transition: ease-in-out;
+  transition-duration: 2s;
+  transition-delay: 2s;
+  
+}
+.nav-area ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav-area li {
+  position: relative;
+}
+
+.nav-area li ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  z-index: 1;
+}
+
+.nav-area li:hover > ul {
+  display: block;
+}
+
+.nav-area li ul li {
+  width: 100%;
+}
+
+.nav-area li ul a {
+  display: block;
+  padding: 10px;
+  color: #333;
+  text-decoration: none;
+}
+
+.nav-area li ul a:hover {
+  background-color: #f2f2f2;
+}
+
+.team-area {
+  float: right;
+}
+
+.team-area h2 {
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.team-area ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.team-area li {
+  margin: 0 20px;
+}
+
+.team-area li img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.team-area li span {
+  display: block;
+  margin-top: 10px;
+  font-size: 18px;
+  color: #fff;
+}
+
+.welcome-text {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.welcome-text h1 {
+  text-align: center;
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.welcome-text p {
+  color: #fff;
+  font-size: 24px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.welcome-text a{
+  border: 1px solid #fff;
+  padding: 10px 25px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-top: 20px;
+  display: inline-block;
+  color: #fff;
+}
+
+.welcome-text a:hover {
+  background: #fff;
+  color:#333;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+@media (max-width: 767px) {
+  footer {
+    position: static;
+  }
+}
+
+
+
